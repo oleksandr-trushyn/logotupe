@@ -203,12 +203,14 @@ header{
     justify-content: space-between;
     margin-bottom: 60px;
 }
-.about_title-box{
+.about_title-box,
+.form_title-box{
     max-width: 520px;
     padding-left: 140px;
     position: relative;
 }
-.about_title-box:before{
+.about_title-box:before,
+.form_title-box:before{
     content: "";
     position: absolute;
     width: 100px;
@@ -217,7 +219,8 @@ header{
     left: 0;
     top: 11px;
 }
-.about-title{
+.about-title,
+.form-title{
     font-size: 24px;
     font-weight: 500;
     line-height: 24px;
@@ -225,7 +228,8 @@ header{
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
 }
-.about_text{
+.about_text,
+.form_text{
     letter-spacing: 0.1px;
 }
 .about_btn a{
@@ -308,4 +312,68 @@ header{
 }
 .about_btn.default-btn:after{
     color: #000000;
+}
+.form{
+    padding-top: 30px;
+}
+.form_inner{
+    padding-bottom: 40px;
+    background-image: url("../img/form-fon.png");
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.form_box{
+    max-width: 848px;
+    padding-top: 45px;
+}
+.form_box-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.form_box-left{
+    max-width: 260px;
+    width: 100%;
+}
+.form_box-right{
+    max-width: 555px;
+    width: 100%;
+}
+.form_box-inner label,
+.form_box-inner input,
+.form_box-inner textarea,
+.form_box-inner select{
+    display: block;
+    width: 100%;
+}
+.form_box-inner label{
+    line-height: 36px;
+    color: #282828;
+    font-family: 'Roboto', sans-serif;
+}
+.form_box-inner input{
+    margin-bottom: 8px;
+    outline: none;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding: 0px 10px;
+}
+.form_box-inner select{
+    outline: none;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding-left: 17px;
+}
+.form_box-inner textarea{
+    outline: none;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    height: 207px;
+    resize: none;
+    margin-bottom: 40px;
+}
+.form_box-inner button{
+    background-color: transparent;
+    color: #282828;
+    float: right;
 }
